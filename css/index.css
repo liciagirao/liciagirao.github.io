@@ -1,17 +1,26 @@
 /* Global */
 
-section {
-    background-color: #8D3245;
+section {    
     min-height: 982px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 30%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 16px;
+        min-height: 844px;
+    }
 }
 
 body {
     margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -30,10 +39,29 @@ li {
     font-weight: 600;
 }
 
+li a {
+    color: #FFEFE0;
+    text-decoration: none
+}
+
 
 li:hover {
     text-decoration-line: underline;
     text-underline-offset: 8px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.11em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.2em;
+        letter-spacing: 0.01em;
+    }
 }
 
 h2 {
@@ -45,15 +73,44 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0.11em;
+    }
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 1em;
+    }
+}
+
 /* Section home */
 
 .section-home {
+    background-color: #8D3245;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
 
+@media only screen and (max-width: 600px) {
+    .section-home {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
 
 .menu-container {
     position: fixed;
@@ -61,6 +118,11 @@ h2 {
     left: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+    .menu-container {
+        display: none;
+    }
+}
 
 .hero-phrase {
     display: flex;
@@ -68,30 +130,115 @@ h2 {
     margin-bottom: 230px;
 }
 
+@media only screen and (max-width: 600px) {
+    .hero-phrase {
+        text-align: right;
+        width: 60%;
+    }
+}
+
 
 .just {
     color: #F0BB75;
-    margin-right: 20px;
-    margin-left: 20px;
     letter-spacing: 0.11em;
     font-weight: bold
+}
+
+/* Section About Me */
+
+.section-aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #A93B53;
+}
+
+.section-aboutme h1 {
+    line-height: 20px;
+    text-align: right;
+    color: #F0BB75; 
+}
+
+.section-aboutme h3 {
+    line-height: 1px;
+    letter-spacing: 0.11em;
+    text-align: right;
+    color: #F0BB75; 
+}
+
+@media only screen and (max-width: 600px) {
+    .section-aboutme h3 {
+        line-height: normal;
+    }
+}
+
+.box-item {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .box-item {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.story-item {
+    display: flex;
+    border-left: 5px solid #F0BB75;
+    position: relative;
+}
+
+.story-item b {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFEFE0;
+}
+
+.story-item p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFEFE0;
+    max-height: 0;
+    max-width: 75%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.story-item:last-child {
+    border-left: 5px solid transparent;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: #F0BB75;
+    position: absolute;
+    top: -2.5px;
+    left: -17.5px;
+}
+
+.story-accordion {
+    margin-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 /* My skills section */
 
 .section-my-skills {
-    padding-left: 30%;
     display: flex;
     flex-direction: column;
     background: #BC425C;
 }
 
 .section-my-skills h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
     line-height: 60px;
-    letter-spacing: 0.11em;
     color: #F0BB75; 
 }
 
@@ -100,15 +247,13 @@ h2 {
 }
 
 .section-my-skills h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
     line-height: 25px;
     color: #FFEFE0;
 }
 
 .skills-group {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skill-item {
@@ -116,6 +261,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-item {
+        margin-right: 16px;
+        margin-top: 16px;
+    }
 }
 
 .skill-image {
@@ -137,18 +289,13 @@ h2 {
 /* My projects section */
 
 .section-my-projects {
-    padding-left: 30%;
     display: flex;
     flex-direction: column;
     background: #D07B8D;
 }
 
 .section-my-projects h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
     line-height: 60px;
-    letter-spacing: 0.11em;
     color: #8D3245; 
 }
 
@@ -167,6 +314,12 @@ h2 {
     margin-right: 24px;
     margin-bottom: 24px;
     padding: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card {
+        width: 80%;
+    }
 }
 
 .project-card:hover {
@@ -193,6 +346,13 @@ h2 {
     margin: 0px; 
 }
 
+@media only screen and (max-width: 600px) {
+    .project-card h2 {
+        font-size: 2em;
+        line-height: normal;
+    }
+}
+
 .project-card h5 {
     font-style: normal;
     font-weight: 700;
@@ -201,6 +361,13 @@ h2 {
     color: #F0BB75;
     margin: 0px;
     margin-top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card h5 {
+        font-size: 1.5em;
+        line-height: normal;
+    }
 }
 
 .download-button-container {
@@ -229,10 +396,29 @@ h2 {
     border: 1px solid #D07B8D;
 }
 
+/* Section contact */
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    background: #E4B3BE;
+}
+
+.section-my-contact h1 {
+    line-height: 60px;
+    color: #8D3245; 
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Section footer */
 
 .footer-section {
-    height: 200px;
+    padding-left: 50px;
+    min-height: 200px;
     background-color: #5C202D;
     display: flex;
     flex-direction: column;

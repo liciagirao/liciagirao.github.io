@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css\index.css">
-        <title>Licia Girão</title>
+    <title>Licia Girão</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
     <body>
         <section class="section-home">
@@ -11,27 +13,98 @@
                 <img src="images\logo_liciagirao.png" alt="Licia Girao logo" width="132" height="97">
 
                 <ul>
-                    <li>ABOUT</li>
-                    <li>SKILLS</li>
-                    <li>PROJECTS</li>
-                    <li>TALK TO ME</li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">SKILLS</a>
+                    </li>
+                        
+                    <li>
+                        <a href="#projects">PROJECTS</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">TALK TO ME</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="hero-phrase">
-                <h2>library science is not</h2>
-                <h2 class="just">just</h2>
-                <h2>about books.</h2>
+                <h2>library science is not <span class="just">just</span> about books.</h2>                
+            </div>
+        </section>
+
+        <section class="section-aboutme" id="about">
+            <div>
+                <h1 class="reveal">OLÁ, HEY, HALLO!</h1>
+                <h3 class="reveal">I am Licia - Librarian and UX/UI Designer. Good to have you here.</h3>
+            </div>
+
+            <div class="box-item reveal">
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2011, Brazil: bachelor course in Library Science at Federal University of Ceará</b>
+                        <p>
+                            Personal information text personal information text personal information text personal information text personal 
+                            information text personal information text
+                        </p>
+                    </div>
+                </div>   
+                
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2013, Brazil: promoted from intern to Media Librarian before graduating</b>
+                        <p>
+                            She stood out as an intern and was promoted before completing her graduation, joining the staff of TV Verdes Mares, an affiliate of TV Globo, the largest commercial TV network in Latin America and the second-largest commercial TV network in the world behind the ABC . She improved her knowledge in organization systems, specialized research, database management, LATCH implementation, taxonomy studies and methodologies related to information architecture. Reached the senior experience level.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2018, Germany: language skills improvement and first contact with design</b>
+                        <p>
+                            After reached the senior experience level as Librarian in Brazil, she moved to Germany to learn a new language and improve her English. As she always had a creative mind and passion for design and architecture, she dedicated herself to studying SketchUp and Canva as a hobby.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2021, Canada: Hired as Library Services Coordinator</b>
+                        <p>
+                            In 2021 she moved to Canada and in less than 3 months she was hired by WildBrain, an award-winning animation and entertainment company. Its duties are managing the digitalization processes of physical media, maintaining the collection's database, cataloging content and metadata treatment.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="story-item">
+                    <div class="circle"></div>
+                    <div class="story-accordion">
+                        <b>— 2022, Canada: UX/UI Certification at University of Toronto</b>
+                        <p>
+                            Mixing her plenty knowledge in search engine optimization and research with her passion for design, he decided to deepen his career in the area of ​​information technology by expanding his training with a UX/UI certification from the University of Toronto.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
-        <section class="section-my-skills">
-            <h1>KEYWORDS</h1>
+        <section class="section-my-skills" id="skills">
+            <h1 class="reveal">KEYWORDS</h1>
             <div class="skills-list">
                 <div class="skill-section">
-                    <h3>- Design Tools:</h3>
-                    <div class="skills-group">
+                    <h3 class="reveal">— Design Tools:</h3>
+                    <div class="skills-group reveal">
                         <div class="skill-item">
                             <img class="skill-image" src="images\figma.png" alt="Figma icon" width="70" height="70">
                             <small>Figma</small>
@@ -52,8 +125,8 @@
                 </div>
 
                 <div class="skill-section">
-                    <h3>- Research Project Tracking:</h3>
-                    <div class="skills-group">
+                    <h3 class="reveal">— Research Project Tracking:</h3>
+                    <div class="skills-group reveal">
                         <div class="skill-item">
                             <img class="skill-image" src="images\google_forms.png" alt="GoogleForms icon" width="70" height="70">
                             <small>Google Forms</small>
@@ -78,8 +151,8 @@
                 </div>
                 
                 <div class="skill-section">
-                    <h3>- Data Management:</h3>
-                    <div class="skills-group">
+                    <h3 class="reveal">— Data Management:</h3>
+                    <div class="skills-group reveal">
                         <div class="skill-item">
                             <img class="skill-image" src="images\github.png" alt="Github icon" width="70" height="70">
                             <small>Github</small>
@@ -96,8 +169,8 @@
                 </div>
 
                 <div class="skill-section">
-                    <h3>- Programming Languages:</h3>
-                    <div class="skills-group">
+                    <h3 class="reveal">— Programming Languages:</h3>
+                    <div class="skills-group reveal">
                         <div class="skill-item">
                             <img class="skill-image" src="images\html.png" alt="Html icon" width="70" height="70">
                             <small>HTML5</small>
@@ -115,28 +188,37 @@
             </div>
         </section> 
         
-        <section class="section-my-projects">
-            <h1>PROJECTS AND PROGRESS</h1>
+        <section class="section-my-projects" id="projects">
+            <h1 class="reveal">PROJECTS AND PROGRESS</h1>
             <div class="project-cards">
-                <div class="project-card">
+                <div class="project-card reveal">
                     <p>Success case</p>
                     <h2>INFORMATION ARCHITECTURE</h2>
                     <h5>Focus on applied standardization methods: metadata to data, taxonomy, content mapping.</h5>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <p>Case study</p>
                     <h2>MOBILE APP</h2>
                     <h5>Focus on applied research methods: qualitative and quantitative research, interviews, card sorting.</h5>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <p>Case study</p>
                     <h2>WEB REDESIGN</h2>
                     <h5>Focus on applied design methods: typography, colorimetry, layout, components, animations.</h5>
                 </div>
             </div>
             <div class="download-button-container">
-                <button class="download-cv-button">Download my CV</button>
+                <button class="download-cv-button reveal">Download my CV</button>
             </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <h1 class="reveal">TIME TO GET IN TOUCH</h1>
+                <div>
+                    <img src="images/profile_liciagirao.jpg" alt="Licia Girao profile photo" width="500" height="667" class="reveal">
+
+                </div>
+ 
         </section>
 
         <section class="footer-section">
@@ -149,5 +231,25 @@
     
             <p>liciagirao.com | © 2023 Licia Girão all rights reserved</p>
         </section>
+
+        <script>
+            var accordions = document.getElementsByClassName("story-accordion");
+            function animateAccordionParagraph() {                
+                var paragraph = this.lastElementChild ;
+                if (paragraph.style.maxHeight) {
+                  paragraph.style.maxHeight = null;
+                } else {
+                  paragraph.style.maxHeight = paragraph.scrollHeight + "px";
+                } 
+            }
+            
+            for (var i = 0; i < accordions.length; i++) {
+              accordions[i].addEventListener("mouseenter", animateAccordionParagraph);
+              accordions[i].addEventListener("mouseleave", animateAccordionParagraph);
+            }
+
+            ScrollReveal().reveal('.reveal', { delay: 600, reset: true });
+            
+        </script>
     </body>
 </html>
