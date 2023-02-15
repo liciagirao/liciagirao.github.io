@@ -1,0 +1,20 @@
+.background-image {
+    background-image: url('../images/background.png');
+    background-size: cover;
+
+}
+
+.nl-background-image {
+    background-image: url('../images/northernlightsbg.png');
+    background-size: cover;
+
+}
+
+.nl-card {
+opacity: 0.7;
+}
+
+.nl-card:hover {
+    opacity: 1;
+
+}
